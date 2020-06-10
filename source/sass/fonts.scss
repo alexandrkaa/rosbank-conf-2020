@@ -1,41 +1,64 @@
 @font-face {
   font-display: swap;
-  font-family: "Circe";
-  font-style: normal;
+  font-family: "Muller";
+  src: url("../fonts/MULLERREGULAR.OTF") format("opentype");
   font-weight: 400;
-  src: url("../fonts/circe/Circe-Regular.eot"); /* IE9 Compat Modes */
-  src: local("Circe"),
-    local("Circe-Regular"),
-    url("../fonts/circe/Circe-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/circe/Circe-Regular.woff") format("woff"),
-    url("../fonts/circe/Circe-Regular.ttf") format("truetype"),
-    url("../fonts/circe/Circe-Regular.svg#Circe") format("svg");
+  font-style: normal;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Circe";
-  font-style: normal;
+  font-family: "Muller";
+  src: url("../fonts/MULLERBOLD.OTF") format("opentype");
   font-weight: 700;
-  src: url("../fonts/Circe-Bold.eot"); /* IE9 Compat Modes */
-  src: local("Circe Bold"),
-    local("Circe-Bold"),
-    url("../fonts/circe/Circe-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/circe/Circe-Bold.woff") format("woff"),
-    url("../fonts/circe/Circe-Bold.ttf") format("truetype"),
-    url("../fonts/circe/Circe-Bold.svg#Circe") format("svg");
+  font-style: normal;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Circe";
-  font-style: normal;
+  font-family: "Muller";
+  src: url("../fonts/MULLERLIGHT.OTF") format("opentype");
   font-weight: 100;
-  src: url("../fonts/circe/Circe-Light.eot"); /* IE9 Compat Modes */
-  src: local("Circe Light"),
-    local("Circe-Light"),
-    url("../fonts/circe/Circe-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/circe/Circe-Light.woff") format("woff"),
-    url("../fonts/circe/Circe-Light.ttf") format("truetype"),
-    url("../fonts/circe/Circe-Light.svg#Circe") format("svg");
+  font-style: normal;
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "Muller";
+  src: url("../fonts/MULLERMEDIUM.OTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/MONTSERRAT-REGULAR.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/MONTSERRAT-EXTRABOLD.TTF") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/MONTSERRAT-BOLD.TTF") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/MONTSERRAT-MEDIUM.TTF") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+

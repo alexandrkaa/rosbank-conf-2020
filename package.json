@@ -1,8 +1,8 @@
 {
-  "name": "tele2quest",
+  "name": "rosbank-conf-2020",
   "version": "1.0.0",
   "private": true,
-  "description": "Верстка для квеста Теле 2",
+  "description": "презентация для конференции от Росбанка",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.7.5",
@@ -58,6 +58,7 @@
     "jquery": "^3.4.1",
     "node-normalize-scss": "^8.0.1",
     "picturefill": "^3.0.3",
+    "slick-carousel": "^1.8.1",
     "tingle.js": "^0.15.2"
   },
   "main": "gulpfile.js",

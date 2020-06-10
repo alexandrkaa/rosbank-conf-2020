@@ -1,7 +1,7 @@
 $breakpoints: (
-  mobile: 414px,
-  tablet: 768px,
-  desktop: 1024px,
+  mobile: 768px,
+  tablet: 992px,
+  desktop: 1440px,
 );
 
 $mobile-width: map-get($breakpoints, mobile);
@@ -12,10 +12,10 @@ $mobile: map-get($breakpoints, mobile);
 $tablet: map-get($breakpoints, tablet);
 $desktop: map-get($breakpoints, desktop);
 
-$cl-grey: #626262;
-$cl-grey-light: #cccccc;
+$cl-grey: #c4c4c4;
 $cl-white: #ffffff;
 $cl-red: #eb4b46;
+$cl-black: #000000;
 
 
 @import "normalize";
@@ -24,23 +24,14 @@ $cl-red: #eb4b46;
 @import "global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/embed-responsive.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/menu-list.scss";
-@import "blocks/logo.scss";
-@import "blocks/header-main.scss";
-@import "blocks/page-content.scss";
-@import "blocks/section-header.scss";
-@import "blocks/link-dotted.scss";
-@import "blocks/concept.scss";
-@import "blocks/news-block.scss";
-@import "blocks/people-list.scss";
-@import "blocks/structure.scss";
-@import "blocks/structure-nav.scss";
-@import "blocks/projects.scss";
-@import "blocks/regions.scss";
-@import "blocks/contacts.scss";
-@import "blocks/footer-main.scss";
-@import "blocks/subscribe.scss";
-@import "blocks/social.scss";
-@import "blocks/social-list.scss";
-@import "blocks/tingle.scss";
+@import "blocks/screen.scss";
+@import "blocks/scroll-down.scss";
+@import "blocks/hero.scss";
+@import "blocks/screen-header.scss";
+@import "blocks/square-list.scss";
+@import "blocks/lead.scss";
+@import "blocks/whoami.scss";
+@import "blocks/whatsaboutlongread.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "blocks/slick-custom.scss";

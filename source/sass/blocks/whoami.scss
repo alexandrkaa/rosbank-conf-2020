@@ -1,0 +1,19 @@
+.whoami__grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  margin-top: 130px;
+}
+
+.whoami__cell {
+  &:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.whoami__cell-wrapper {
+  max-width: 600px;
+}

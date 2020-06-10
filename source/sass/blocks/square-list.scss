@@ -1,0 +1,19 @@
+.square-list {
+  @include list-reset;
+}
+
+.square-list__item {
+  padding-left: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: $cl-red;
+  }
+}

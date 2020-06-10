@@ -1,0 +1,46 @@
+$breakpoints: (
+  mobile: 414px,
+  tablet: 768px,
+  desktop: 1024px,
+);
+
+$mobile-width: map-get($breakpoints, mobile);
+$tablet-width: map-get($breakpoints, tablet);
+$desktop-width: map-get($breakpoints, desktop);
+
+$mobile: map-get($breakpoints, mobile);
+$tablet: map-get($breakpoints, tablet);
+$desktop: map-get($breakpoints, desktop);
+
+$cl-grey: #626262;
+$cl-grey-light: #cccccc;
+$cl-white: #ffffff;
+$cl-red: #eb4b46;
+
+
+@import "normalize";
+@import "mixin.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/embed-responsive.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu-list.scss";
+@import "blocks/logo.scss";
+@import "blocks/header-main.scss";
+@import "blocks/page-content.scss";
+@import "blocks/section-header.scss";
+@import "blocks/link-dotted.scss";
+@import "blocks/concept.scss";
+@import "blocks/news-block.scss";
+@import "blocks/people-list.scss";
+@import "blocks/structure.scss";
+@import "blocks/structure-nav.scss";
+@import "blocks/projects.scss";
+@import "blocks/regions.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer-main.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/social.scss";
+@import "blocks/social-list.scss";
+@import "blocks/tingle.scss";

@@ -1,0 +1,26 @@
+/* stylelint-disable */
+@mixin list-reset {
+  list-style: none;
+  //margin: 0;
+  padding: 0;
+}
+
+@mixin mq($breakpoint) {
+  // Goes to $breakpoints map and gets each $breakpoint value (if any)
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Create a media query based on that $breakpoint value
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint doesn't exist, please check breakpoints map.";
+  }
+}
+
+@mixin is-active {
+  &:focus,
+  &:active {
+    @content;
+  }
+}

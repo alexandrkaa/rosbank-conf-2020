@@ -16,7 +16,7 @@
   <body class="page">
     <main>
       <article class="presentation">
-        <section class="screen screen--0 hero">
+        <section data-sectionid="0" class="screen screen--0 hero">
           <h2 class="visually-hidden">Вступление</h2>
           <div class="hero__wrapper">
             <div class="hero__main">
@@ -34,7 +34,7 @@
             </div>
             <ul class="hero__scroll">
               <li class="hero__scroll-item">
-                <button class="hero__scroll-dot" data-scrollto="1"><span class="visually-hidden">Слайд № 1</span></button>
+                <button class="hero__scroll-dot hero__scroll-dot--active" data-scrollto="1"><span class="visually-hidden">Слайд № 1</span></button>
               </li>
               <li class="hero__scroll-item">
                 <button class="hero__scroll-dot" data-scrollto="2"><span class="visually-hidden">Слайд № 2</span></button>
@@ -69,7 +69,7 @@
             </ul>
           </div>
         </section>
-        <section class="screen screen--1">
+        <section data-sectionid="1" class="screen screen--1">
           <div class="screen__wrapper screen__wrapper--main">
             <h1 class="screen-header screen-header--main">Курсы-лонгриды своими руками: <br>альтернатива шаблонным решениям</h1>
             <p class="lead lead--screen-1">О чем расскажем:</p>
@@ -81,7 +81,7 @@
             </ul>
           </div>
         </section>
-        <section class="screen whoami screen--2">
+        <section data-sectionid="2" class="screen screen--2 whoami">
           <div class="screen__wrapper">
             <h2 class="screen-header">Кто мы такие и зачем уходим от листалок</h2>
             <div class="whoami__grid">
@@ -101,14 +101,14 @@
             </div>
           </div>
         </section>
-        <section class="screen whatsaboutlongread screen--3">
+        <section data-sectionid="3" class="screen screen--3 whatsaboutlongread">
           <div class="screen__wrapper">
             <h2 class="screen-header">Как насчет лонгрида?</h2>
             <p class="whatsaboutlongread__text">Лонгрид - это интерактивная статья с фото, видео, аудио и не только. Эти элементы позволяют лучше «погрузиться» в материал и сделать большой текст увлекательным. Мы уже привыкли к лонгридам в интернете:</p>
           </div>
           <img class="whatsaboutlongread__gif" src="img/site_800.gif" alt="" srcset="">
         </section>
-        <section class="screen itscool screen--4">
+        <section data-sectionid="4" class="screen screen--4 itscool">
           <div class="screen__wrapper">
             <h2 class="screen-header">Почему лонгриды в обучении — классно?</h2>
             <div class="slider-wrapper">
@@ -136,7 +136,7 @@
             </div>
           </div>
         </section>
-        <section class="screen ourpath screen--5">
+        <section data-sectionid="5" class="screen screen--5 ourpath">
           <div class="screen__wrapper">
             <h2 class="screen-header">Решено! У нас будут лонгриды. Или нет?</h2>
             <p>Первое, о чем подумали — Articulate Rise 360. Это недорогой конструктор лонгридов со встроенными стилями и элементами. Но информационная безопасность запретила его из-за облачного хранилища.</p>
@@ -150,13 +150,13 @@
             <li class="ourpath__item ourpath__item--4">4. На базе шаблона верстаем остальные курсы</li>
           </ol>
         </section>
-        <section class="screen hereswhatgot screen--6">
+        <section data-sectionid="6" class="screen screen--6 hereswhatgot">
           <div class="screen__wrapper">
             <p>Вот, что у нас получилось:</p>
           </div>
           <img class="hereswhatgot__gif" src="img/portal_screen.gif" alt="" srcset="">
         </section>
-        <section class="screen screen--7">
+        <section data-sectionid="7" class="screen screen--7">
           <div class="screen__wrapper">
             <h2 class="screen-header">Не слишком ли мы заморочились?</h2>
             <p>У нас не было выбора 😃 В итоге оказалось, что так даже лучше. </p>
@@ -170,23 +170,70 @@
             </ul>
           </div>
         </section>
-        <section class="screen destroy screen--8">
+        <section data-sectionid="8" class="screen screen--8 destroy">
           <img class="destroy__hero" src="img/destroy.jpg" width="1200" height="361" alt="" srcset="">
-          <ul class="destroy__cards">
-            <li class="destroy__card">
-              <p>На начальном этапе нужен технический специалист. Он разработает шаблон и сверстает первый курс, который ляжет в основу конструктора.</p>
-              <p class="black">У нас это заняло 4 дня.</p>
-              <p class="destroy__destroed">РАЗРУШЕНО</p>
-            </li>
-            <li class="destroy__card">
-              <p>Нужен дизайнер, который задизайнит типовые элементы.</p>
-            </li>
-            <li class="destroy__card">
-              <p>Сотруднику, который будет вносить правки, нужны базовые знания об HTML/CSS.</p>
-            </li>
-          </ul>
+          <div class="destroy__cards">
+            <div class="card js-card">
+              <div class="card__wrapper">
+                <div class="card__side is-active">
+                  <p class="black">На начальном этапе нужен технический специалист. Он разработает шаблон и сверстает первый курс, который ляжет в основу конструктора.</p>
+                </div>
+                <div class="card__side card__side--back">
+                  <p>На начальном этапе нужен технический специалист. Он разработает шаблон и сверстает первый курс, который ляжет в основу конструктора.</p>
+                  <p class="black">У нас это заняло 4 дня.</p>
+                  <p class="destroy__destroed destroy__destroed--1">РАЗРУШЕНО</p>
+                </div>
+              </div>
+            </div>
+            <div class="card js-card">
+              <div class="card__wrapper">
+                <div class="card__side is-active">
+                  <p class="black">Нужен дизайнер, который задизайнит типовые элементы.</p>
+                </div>
+                <div class="card__side card__side--back">
+                  <p>Нужен дизайнер, который задизайнит типовые элементы.</p>
+                  <p class="black">Это быстро и недорого.</p>
+                  <p class="destroy__destroed destroy__destroed--2">РАЗРУШЕНО</p>
+                </div>
+              </div>
+            </div>
+            <div class="card js-card">
+              <div class="card__wrapper">
+                <div class="card__side is-active">
+                  <p class="black">Сотруднику, который будет вносить правки, нужны базовые знания об HTML/CSS.</p>
+                </div>
+                <div class="card__side card__side--back">
+                  <p>Сотруднику, который будет вносить правки, нужны базовые знания об HTML/CSS.</p>
+                  <p class="black">Мы прошли бесплатный Кексби-челлендж в html-академии.</p>
+                  <p class="destroy__destroed destroy__destroed--3">РАЗРУШЕНО</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="destroy__cards">
+            <div class="destroy__card-wrapper">
+              <div class="destroy__card destroy__card--front">
+                <p class="black">На начальном этапе нужен технический специалист. Он разработает шаблон и сверстает первый курс, который ляжет в основу конструктора.</p>
+              </div>
+              <div class="destroy__card destroy__card--back">
+                <p>На начальном этапе нужен технический специалист. Он разработает шаблон и сверстает первый курс, который ляжет в основу конструктора.</p>
+                <p class="black">У нас это заняло 4 дня.</p>
+                <p class="destroy__destroed">РАЗРУШЕНО</p>
+              </div>
+            </div>
+            <div class="destroy__card-wrapper">
+              <div class="destroy__card">
+                <p>Нужен дизайнер, который задизайнит типовые элементы.</p>
+              </div>
+            </div>
+            <div class="destroy__card-wrapper">
+              <div class="destroy__card">
+                <p>Сотруднику, который будет вносить правки, нужны базовые знания об HTML/CSS.</p>
+              </div>
+            </div>
+          </div> -->
         </section>
-        <section class="screen itsexpensive screen--9">
+        <section data-sectionid="9" class="screen screen--9 itsexpensive">
           <div class="screen__wrapper">
             <h2 class="lead">Кажется, это все-таки дорого...</h2>
           </div>
@@ -253,7 +300,7 @@
             </tr>
           </table>
         </section>
-        <section class="screen attheend screen--10">
+        <section data-sectionid="10" class="screen screen--10 attheend">
           <div class="screen__wrapper">
             <h2 class="lead">К чему мы пришли</h2>
             <div class="slider-wrapper">
@@ -277,7 +324,7 @@
             </div>
           </div>
         </section>
-        <section class="screen contacts screen--11">
+        <section data-sectionid="11" class="screen screen--11 contacts">
           <div class="screen__wrapper">
             <h2 class="screen-header">Если у вас есть вопросы</h2>
             <p>Мы же все теперь любим QR-коды ;)</p>

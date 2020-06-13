@@ -16,6 +16,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  position: fixed;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
 }
 
 .hero__scroll-dot {
@@ -33,12 +38,16 @@
   &:hover {
     background-color: $cl-red;
   }
+
+  &--active {
+    background-color: $cl-red;
+  }
 }
 
 .hero__wrapper {
   flex-basis: 100%;
   display: grid;
-  grid-template-columns: 1fr 150px;
+  grid-template-columns: 1fr;
 
   @include mq(mobile) {
     grid-template-columns: 1fr;

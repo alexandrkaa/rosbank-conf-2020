@@ -1,0 +1,28 @@
+.ourpath__list {
+  @include list-reset;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.ourpath__item {
+  padding-top: 80px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  @for $i from 1 through 4 {
+    &--#{$i} {
+      @if $i < 4 {
+        background-image: url("../img/ourpath_0#{$i}.svg"), url("../img/arrow_0#{$i}.svg");
+        background-position: left top, right top 20px;
+      } @else {
+        background-image: url("../img/ourpath_0#{$i}.svg");
+      }
+    }
+  }
+}

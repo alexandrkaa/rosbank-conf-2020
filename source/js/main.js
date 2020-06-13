@@ -43,6 +43,11 @@ $(document).ready(function() {
     $('.screen--'+$(this).data('scrollto')).goTo();
   });
 
+  $('.hero__scroll-down').click(function(evt) {
+    evt.preventDefault();
+    $('.screen--1').goTo();
+  });
+
   $(".slider-wrapper").slick({
     dots: true,
     infinite: true,

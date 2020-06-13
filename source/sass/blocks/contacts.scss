@@ -1,0 +1,14 @@
+.contacts {
+  a {
+    color: $cl-black;
+  }
+}
+.contacts__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  font-size: 20px;
+  line-height: 150%;
+}

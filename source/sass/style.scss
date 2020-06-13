@@ -13,8 +13,10 @@ $tablet: map-get($breakpoints, tablet);
 $desktop: map-get($breakpoints, desktop);
 
 $cl-grey: #c4c4c4;
+$cl-grey-light: #e2e2e2;
 $cl-white: #ffffff;
 $cl-red: #eb4b46;
+$cl-red-red: #ff0000;
 $cl-black: #000000;
 
 
@@ -35,3 +37,11 @@ $cl-black: #000000;
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 @import "blocks/slick-custom.scss";
+@import "blocks/itscool.scss";
+@import "blocks/ourpath.scss";
+@import "blocks/destroy.scss";
+@import "blocks/hereswhatgot.scss";
+@import "blocks/black.scss";
+@import "blocks/itsexpensive.scss";
+@import "blocks/attheend.scss";
+@import "blocks/contacts.scss";

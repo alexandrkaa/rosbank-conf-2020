@@ -143,7 +143,7 @@ $(document).ready(function() {
   var observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach( function(entry) {
       if (entry.isIntersecting) {
-        if(entry.intersectionRatio >= 0.8) {
+        if(entry.intersectionRatio >= 0.65) {
           window.current = entry.target.dataset.sectionid;
           $('.hero__scroll-dot').removeClass('hero__scroll-dot--active');
           $('.hero__scroll-dot[data-scrollto="'+window.current+'"]').addClass('hero__scroll-dot--active');

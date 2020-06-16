@@ -156,6 +156,12 @@ $(document).ready(function() {
   arr.forEach(function(i) {
       observer.observe(i)
   });
+
+  $(document).on('keydown', function(evt) {
+    if(evt.keyCode === 40 || evt.keyCode === 38) {
+      console.log(evt.keyCode);
+    }
+  });
 })();
 
 

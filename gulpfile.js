@@ -169,7 +169,7 @@ gulp.task('refresh', function (done) {
   done();
 });
 
-gulp.task('img', gulp.series('webp', 'images', 'copy'));
+// gulp.task('img', gulp.series('webp', 'images', 'copy'));
 gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'js', 'html', 'minifyhtml')); // , 'clean_wp', 'copy_wp', 'modifyUrls'
 //gulp.task('deploy', gulp.series('build', 'publish'));
 gulp.task('start', gulp.series('build', 'server'));

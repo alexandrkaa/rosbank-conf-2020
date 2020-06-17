@@ -134,6 +134,9 @@ $(document).ready(function() {
 
 (function() {
 
+  var DOWN_ARROW = 40;
+  var UP_ARROW = 38;
+
   var options = {
       root: null,
       rootMargin: '0px',
@@ -158,8 +161,26 @@ $(document).ready(function() {
   });
 
   $(document).on('keydown', function(evt) {
-    if(evt.keyCode === 40 || evt.keyCode === 38) {
-      console.log(evt.keyCode);
+    try {
+      if(evt.keyCode === DOWN_ARROW || evt.keyCode === UP_ARROW) {
+        // console.log(evt.keyCode);
+        if($('.hero__scroll-dot--active').data('scrollto') === undefined) {
+          $('.screen--1').goTo();
+        } else
+        if(evt.keyCode === DOWN_ARROW) {
+          // console.log(+$('.hero__scroll-dot--active').data('scrollto'));
+          if(+$('.hero__scroll-dot--active').data('scrollto') < 12) {
+            $('.screen--'+(+$('.hero__scroll-dot--active').data('scrollto') + 1)).goTo();
+            // console.log((+$('.hero__scroll-dot--active').data('scrollto') + 1));
+          }
+        } else {
+          if(!$('.hero__scroll-dot--active').data('scrollto') < 2) {
+            $('.screen--'+(+$('.hero__scroll-dot--active').data('scrollto') -1)).goTo();
+          }
+        }
+      }
+    } catch(err_) {
+      console.error(err_);
     }
   });
 })();
